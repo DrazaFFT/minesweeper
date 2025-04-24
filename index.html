@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minesweeper</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="controls">
+    <label>
+      Grid Size:
+      <select id="grid-size">
+        <option value="8x8">8 × 8</option>
+        <option value="10x10" selected>10 × 10</option>
+        <option value="12x12">12 × 12</option>
+        <option value="16x16">16 × 16</option>
+        <option value="16x30">16 × 30</option>
+      </select>
+    </label>
+    <label>
+      Difficulty:
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium" selected>Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+    </label>
+    <button id="reset">Start</button>
+  </div>
+
+  <div id="board-container">
+    <div id="board"></div>
+    <div id="overlay" class="hidden">
+      <span id="overlay-text"></span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
